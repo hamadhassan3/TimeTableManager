@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="845.0" spacing="20.0" style="-fx-background-color: linear-gradient(to right top, #000000, #3b2f3e, #52648a, #2fa6ce, #12ebeb);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.InputScreenController">
+   <children>
+      <Label fx:id="title" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="58.0" prefWidth="759.0" text="SET UP SCREEN" textFill="WHITE" VBox.vgrow="ALWAYS">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Label>
+      <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+         <children>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Start Date:" textFill="WHITE" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="200.0" />
+               </HBox.margin>
+            </Label>
+            <DatePicker fx:id="startDate" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="100.0" right="200.0" />
+               </HBox.margin>
+            </DatePicker>
+         </children>
+      </HBox>
+      <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+         <children>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="End Date:" textFill="WHITE" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="200.0" />
+               </HBox.margin>
+            </Label>
+            <DatePicker fx:id="endDate" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="164.0" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="98.0" right="200.0" />
+               </HBox.margin>
+            </DatePicker>
+         </children>
+      </HBox>
+      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="OK to have transitions between:" textFill="WHITE" VBox.vgrow="ALWAYS">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="200.0" right="200.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="30.0" prefWidth="640.0">
+         <children>
+            <CheckBox fx:id="satTransitionCheck" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Saturday" textFill="WHITE" HBox.hgrow="SOMETIMES">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="200.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="sunTransitionCheck" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Sunday" textFill="WHITE" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </CheckBox>
+         </children>
+      </HBox>
+      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="OK to have off days on:" textFill="WHITE" VBox.vgrow="ALWAYS">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="200.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <CheckBox fx:id="monOkCheck" mnemonicParsing="false" text="Monday" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="200.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="tueOKCheck" mnemonicParsing="false" text="Tuesday" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="200.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="wedOKCheck" mnemonicParsing="false" text="Wednesday" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="200.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="thurOKCheck" mnemonicParsing="false" text="Thursday" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="200.0" />
+                     </VBox.margin>
+                  </CheckBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <CheckBox fx:id="friOKCheck" mnemonicParsing="false" text="Friday" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="200.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="satOKCheck" mnemonicParsing="false" text="Saturday" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="200.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="sunOKCheck" mnemonicParsing="false" text="Sunday" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="200.0" />
+                     </VBox.margin>
+                  </CheckBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#goToTemplate" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: green;" text="Go To Template" textFill="WHITE">
+               <HBox.margin>
+                  <Insets bottom="20.0" right="20.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

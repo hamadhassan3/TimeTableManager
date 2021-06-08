@@ -1,0 +1,12 @@
+.table-row-cell {
+  -fx-padding: 0 0 0 0;
+  -fx-margin: 0 0 0 0;
+  -fx-insets: 20, 20, 20, 20;
+}
+
+
+.table-row-cell{
+  -fx-padding: 0 0 0 0;
+  -fx-margin: 0 0 0 0;
+  -fx-insets: 10, 10, 10, 10;
+}
